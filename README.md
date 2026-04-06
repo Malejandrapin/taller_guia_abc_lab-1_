@@ -31,30 +31,11 @@ abcchallenge/
    ```
 2. Abrir `index.html` en el navegador — no requiere servidor ni dependencias.
 
-## Flujo de trabajo en Git
-
-Cada integrante trabaja en su propia rama según el bloque de letras asignado:
-
-```bash
-git checkout -b letras-A-E
-# ... trabajar y hacer commits frecuentes ...
-git push origin letras-A-E
-```
-
-El líder hace merge de cada rama a `main` al finalizar.
-
-**Distribución sugerida (5 personas):** A–E · F–J · K–O · P–T · U–Z
-
-## Equipo
-
-| Integrante | Letras |
-|------------|--------|
-| Nombre 1   | A – E  |
-| Nombre 2   | F – J  |
-| Nombre 3   | K – O  |
-| Nombre 4   | P – T  |
-| Nombre 5   | U – Z  |
-
 ---
 
-*Laboratorio grupal · Generation Colombia · 2026*
+## Integrantes
+- Camilo Castellanos
+- Maira Pinilla
+- Camilo Orjuela
+- Didier Cuan
+- Luís Rodríguez
