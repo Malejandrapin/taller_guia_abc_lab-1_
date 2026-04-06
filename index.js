@@ -67,6 +67,10 @@ function generarTarjetas() {
 
         tarjeta.dataset.tipo = vocales.includes(letra.nombre) ? "vocal" : "consonante";
 
+        // Agregar atributo para rastrear si ha sido volteada por primera vez
+
+        tarjeta.dataset.flipped = "false";
+
         // Evento al hacer clic en la tarjeta para voltear y mostrar la información de la letra
 
         tarjeta.addEventListener("click", function () {
@@ -83,7 +87,7 @@ function generarTarjetas() {
 
             <div class="cardAtras">
 
-                <img src="${letra.imagen}" alt="${letra.nombre}">
+                <img src="${letra.imagen}" alt="${letra.nombre}" onerror="this.src='https://via.placeholder.com/160x160?text=Imagen+Rota'">
 
                 <p>${letra.palabra}</p>
 
@@ -104,6 +108,20 @@ function generarTarjetas() {
 function voltear(tarjeta) {
 
     if (tarjeta.classList.contains("bloqueada")) return;
+
+    // Obtener el contador
+
+    const counter = document.getElementById('card-counter');
+
+    // Si es la primera vez que se voltea, incrementar el contador
+
+    if (tarjeta.dataset.flipped === "false") {
+
+        counter.textContent = parseInt(counter.textContent) + 1;
+
+        tarjeta.dataset.flipped = "true";
+
+    }
 
     // Agregar las clases "volteada" y "bloqueada" a la tarjeta para mostrar la cara trasera y bloquearla
 
