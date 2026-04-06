@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    height: 100dvh;
+    width: 100dvw;
+
+    /* border: 1px solid red; */
+    nav {
+        border: 1px solid red;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-grow: 9;
+
+        padding: 2rem;
+        border: 1px solid red;
+
+        .card {
+            border: 1px solid green;
+        }
+    }
+
+    footer {
+        border: 1px solid red;
+    }
+
+}
