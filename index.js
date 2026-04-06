@@ -7,31 +7,34 @@ class Caracter {
     }
 }
 
-const aLetter = new Caracter("A", "A", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_A.svg/1200px-Letter_A.svg.png", true);
-const bLetter = new Caracter("B", "B", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_B.svg/1200px-Letter_B.svg.png", true);
-const cLetter = new Caracter("C", "C", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_C.svg/1200px-Letter_C.svg.png", true);
-const dLetter = new Caracter("D", "D", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_D.svg/1200px-Letter_D.svg.png", true);
-const eLetter = new Caracter("E", "E", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_E.svg/1200px-Letter_E.svg.png", true);
-const fLetter = new Caracter("F", "F", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_F.svg/1200px-Letter_F.svg.png", true);
-const gLetter = new Caracter("G", "G", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_G.svg/1200px-Letter_G.svg.png", true);
-const hLetter = new Caracter("H", "H", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_H.svg/1200px-Letter_H.svg.png", true);
-const iLetter = new Caracter("I", "I", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_I.svg/1200px-Letter_I.svg.png", true);
-const jLetter = new Caracter("J", "J", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_J.svg/1200px-Letter_J.svg.png", true);
-const kLetter = new Caracter("K", "K", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_K.svg/1200px-Letter_K.svg.png", true);
-const lLetter = new Caracter("L", "L", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_L.svg/1200px-Letter_L.svg.png", true);
-const mLetter = new Caracter("M", "M", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_M.svg/1200px-Letter_M.svg.png", true);
-const nLetter = new Caracter("N", "N", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_N.svg/1200px-Letter_N.svg.png", true);
-const oLetter = new Caracter("O", "O", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_O.svg/1200px-Letter_O.svg.png", true);
-const pLetter = new Caracter("P", "P", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_P.svg/1200px-Letter_P.svg.png", true);
-const qLetter = new Caracter("Q", "Q", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_Q.svg/1200px-Letter_Q.svg.png", true);
-const rLetter = new Caracter("R", "R", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_R.svg/1200px-Letter_R.svg.png", true);
-const sLetter = new Caracter("S", "S", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_S.svg/1200px-Letter_S.svg.png", true);
-const tLetter = new Caracter("T", "T", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_T.svg/1200px-Letter_T.svg.png", true);
-const uLetter = new Caracter("U", "U", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_U.svg/1200px-Letter_U.svg.png", true);
-const vLetter = new Caracter("V", "V", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_V.svg/1200px-Letter_V.svg.png", true);
-const wLetter = new Caracter("W", "W", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_W.svg/1200px-Letter_W.svg.png", true);
-const xLetter = new Caracter("X", "X", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_X.svg/1200px-Letter_X.svg.png", true);
-const yLetter = new Caracter("Y", "Y", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_Y.svg/1200px-Letter_Y.svg.png", true);
-const zLetter = new Caracter("Z", "Z", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Letter_Z.svg/1200px-Letter_Z.svg.png", true);
+const aLetter = new Caracter("A", "Letra A", "https://www.conmishijos.com/uploads/letras_cmh_a.jpg", true);
+const bLetter = new Caracter("B", "Letra B", "https://www.bing.com/th?id=OIP.4U_rAZzNhJ2iEiANbI0HVwHaJ4", true);
+const cLetter = new Caracter("C", "Letra C", "https://tse4.mm.bing.net/th/id/OIP.KDniVD-xRbqKG8I1T3dCvAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3", true);
+const dLetter = new Caracter("D", "Letra D", "https://th.bing.com/th/id/OIP.4cuuKi-lkuPk1oQE-ceG4wHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", true);
+const eLetter = new Caracter("E", "Letra E", "https://i.pinimg.com/originals/12/50/ad/1250ad32922aa2565b09b4f2dceadfbf.jpg", true);
+const fLetter = new Caracter("F", "Letra F", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0zrQe2t9g-Rzz4gjZU3QjA1-2Y5LbFarZeQ&s", true);
+const gLetter = new Caracter("G", "Letra G", "https://img.freepik.com/vector-gratis/icon-vector-dibujos-animados-galletas-galletas-ilustracion-alimentos-icones-objetos-aislados-planos_138676-13050.jpg?semt=ais_hybrid&w=740&q=80", true);
+const hLetter = new Caracter("H", "Letra H", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCjwpPJfax2m7tmjPCI0JAfqYNJtUMnQ2YKg&s", true);
+const iLetter = new Caracter("I", "Letra I", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSueU2zPXcVuP0fTXRNWYVWTkZNaDUb4pJL5A&s", true);
+const jLetter = new Caracter("J", "Letra J", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVUQ1xDyk_gsCqxSpP2ecIsh3LlVI0mYPz0g&s", true);
+const kLetter = new Caracter("K", "Letra K", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVO_QiPMeeNOKNtcedvMgKv7oV0GQVV0v0Cw&s", true);
+const lLetter = new Caracter("L", "Letra L", "https://i.pinimg.com/originals/77/c6/e0/77c6e0af8d3638f70820957fdb54bb7d.png", true);
+const mLetter = new Caracter("M", "Letra M", "https://img.freepik.com/vector-premium/dibujos-animados-clipart-manzana-dibujo-ilustracion_871209-13266.jpg?semt=ais_incoming&w=740&q=80", true);
+const nLetter = new Caracter("N", "Letra N", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuiXBRUOJuACf5EOagmbWLhzrikQ_U-eM8tw&s", true);
+const eneLetter = new Caracter("Ñ", "Letra Ñ", "https://img.freepik.com/vector-gratis/tapioca-dibujada-mano_23-2148696147.jpg?semt=ais_incoming&w=740&q=80", true);
+const oLetter = new Caracter("O", "Letra O", "https://img.freepik.com/vector-premium/adorables-personajes-dibujos-animados-osos-varios-colores-sentados-expresiones-sonrientes-ilustracion-vectorial_1291833-5417.jpg?semt=ais_incoming&w=740&q=80", true);
+const pLetter = new Caracter("P", "Letra P", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTUIDeKU-NAdjlcdc_BkOE36XpDtBMdEIaNw&s", true);
+const qLetter = new Caracter("Q", "Letra Q", "https://static.vecteezy.com/system/resources/previews/018/931/312/non_2x/cartoon-cheese-icon-png.png", true);
+const rLetter = new Caracter("R", "Letra R", "https://img.freepik.com/vector-gratis/raton-alegre-ilustracion-queso_1308-163340.jpg?semt=ais_incoming&w=740&q=80", true);
+const sLetter = new Caracter("S", "Letra S", "https://img.freepik.com/vector-gratis/ilustracion-dibujos-animados-ranas-dibujadas-mano_23-2151320892.jpg?semt=ais_incoming&w=740&q=80", true);
+const tLetter = new Caracter("T", "Letra T", "https://img.freepik.com/vector-premium/ilustracion-tortuga-ninos-elemento-diseno-tarjeta-ducha-bebe-invitacion-libro-recortes-articulos-ninos_999327-92569.jpg", true);
+const uLetter = new Caracter("U", "Letra U", "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/f399569d83e6cfaffe5c993312bef24e2c9ed085.jpg", true);
+const vLetter = new Caracter("V", "Letra V", "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d12ff494a062f925eae6ecaa14fd5c09de8e95f0.jpg", true);
+const wLetter = new Caracter("W", "Letra W", "https://img.freepik.com/vector-gratis/waffle-postre-icono-fruta-aislado_24877-83695.jpg?semt=ais_incoming&w=740&q=80", true);
+const xLetter = new Caracter("X", "Letra X", "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2ca3e4e5c4f354652ebc03ae2ae6257081015afe.jpg", true);
+const yLetter = new Caracter("Y", "Letra Y", "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/9f63c6131a7c7cab01b8983d22c9eb710fddf269.jpg", true);
+const zLetter = new Caracter("Z", "Letra Z", "https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c378292de0c5a592db895b77a34e57ea1b1f61cd.jpg", true);
 
-const letras = [aLetter, bLetter, cLetter, dLetter, eLetter, fLetter, gLetter, hLetter, iLetter, jLetter, kLetter, lLetter, mLetter, nLetter, oLetter, pLetter, qLetter, rLetter, sLetter, tLetter, uLetter, vLetter, wLetter, xLetter, yLetter, zLetter];
+
+
+const letras = [aLetter, bLetter, cLetter, dLetter, eLetter, fLetter, gLetter, hLetter, iLetter, jLetter, kLetter, lLetter, mLetter, nLetter, eneLetter, oLetter, pLetter, qLetter, rLetter, sLetter, tLetter, uLetter, vLetter, wLetter, xLetter, yLetter, zLetter];
