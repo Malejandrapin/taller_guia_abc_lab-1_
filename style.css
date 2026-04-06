@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -13,16 +15,45 @@ body {
     height: 100dvh;
     width: 100dvw;
 
-    /* border: 1px solid red; */
     nav {
-        border: 1px solid red;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgb(119, 157, 134);
+        color: white;
+
+        font-size: 1.5rem;
+    }
+
+    .filter-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        padding: 1rem;
+        background-color: rgb(255, 255, 255);
+
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 1rem;
+            background-color: rgb(119, 152, 157);
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(101, 100, 130);
+            }
+        }
     }
 
     .cards-container {
         display: flex;
         flex-grow: 9;
 
-        padding: 2rem;
+        padding: 1rem;
         border: 1px solid red;
 
         .card {
@@ -31,7 +62,25 @@ body {
     }
 
     footer {
-        border: 1px solid red;
+        background-color: rgb(119, 157, 134);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+
+        p {
+            font-size: 1rem;
+            padding: 1rem;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        li {
+            font-size: 1.5rem;
+        }
     }
 
 }
