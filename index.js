@@ -38,3 +38,85 @@ const zLetter = new Caracter("Z", "Letra Z", "https://pplx-res.cloudinary.com/im
 
 
 const letras = [aLetter, bLetter, cLetter, dLetter, eLetter, fLetter, gLetter, hLetter, iLetter, jLetter, kLetter, lLetter, mLetter, nLetter, eneLetter, oLetter, pLetter, qLetter, rLetter, sLetter, tLetter, uLetter, vLetter, wLetter, xLetter, yLetter, zLetter];
+
+// Variable que contiene las vocales para identificar el tipo de letra
+
+const vocales = ["A", "E", "I", "O", "U"];
+
+// Función para generar las tarjetas de letras en el contenedor
+
+function generarTarjetas() {
+
+    // Seleccionar el contenedor donde se agregarán las tarjetas
+
+    const contenedor = document.querySelector(".cards-container");
+
+    // Recorrer el array de letras y crear una tarjeta para cada letra
+
+    letras.forEach(function (letra) {
+
+        // Crear un elemento div para la tarjeta y agregarle la clase "tarjeta"
+
+        const tarjeta = document.createElement("div");
+
+        // Agregar la clase "tarjeta" al elemento div
+
+        tarjeta.classList.add("tarjeta");
+
+        // Determinar el tipo de letra (vocal o consonante) y asignarlo como un atributo de datos a la tarjeta
+
+        tarjeta.dataset.tipo = vocales.includes(letra.nombre) ? "vocal" : "consonante";
+
+        // Evento al hacer clic en la tarjeta para voltear y mostrar la información de la letra
+
+        tarjeta.addEventListener("click", function () {
+
+            voltear(tarjeta);
+
+        });
+
+        // Agrega el contenido HTML a la tarjeta incluyendo ambas caras
+
+        tarjeta.innerHTML = `
+
+            <div class="cardFrente">${letra.nombre}</div>
+
+            <div class="cardAtras">
+
+                <img src="${letra.imagen}" alt="${letra.nombre}">
+
+                <p>${letra.palabra}</p>
+
+            </div>
+
+        `;
+
+        // Agregar la tarjeta al contenedor
+
+        contenedor.appendChild(tarjeta);
+
+    });
+
+}
+
+// Función para voltear la tarjeta y mostrar la información de la letra
+
+function voltear(tarjeta) {
+
+    if (tarjeta.classList.contains("bloqueada")) return;
+
+    // Agregar las clases "volteada" y "bloqueada" a la tarjeta para mostrar la cara trasera y bloquearla
+
+    tarjeta.classList.add("volteada");
+
+    // Agregar la clase "bloqueada" a la tarjeta para evitar que se pueda voltear nuevamente
+
+    tarjeta.classList.add("bloqueada");
+
+}
+
+// Agregar un evento al cargar el contenido del DOM para generar las tarjetas 
+
+// El evento "DOMContentLoaded" se dispara cuando el documento HTML ha sido completamente cargado
+
+document.addEventListener("DOMContentLoaded", generarTarjetas);

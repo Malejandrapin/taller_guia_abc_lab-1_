@@ -68,20 +68,146 @@ body {
     }
 
     .cards-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 9;
 
-        padding: 0 0 1rem 1rem;
-        border: 1px solid red;
+        display: flex;
 
         flex-wrap: wrap;
 
-        .card {
-            border: 1px solid green;
-            margin: 1rem 1rem 0 0;
-        }
+        justify-content: center;
+
+        gap: 10px;
+
+        padding: 32px 16px;
+
+        max-width: 2200px;
+
+        margin: 0 auto;
+
+    }
+
+    /* Diseño de las tarjetas antes de voltear */
+
+    .tarjeta {
+
+        position: relative;
+
+        width: 200px;
+
+        height: 220px;
+
+        transform-style: preserve-3d;
+
+        /* Realiza la transición de rotación */
+
+        transition: transform 0.6s ease;
+
+        cursor: pointer;
+
+        border-radius: 14px;
+
+    }
+
+    /* Aumento de la escala de la tarjeta cuando se pasa el mouse por encima */
+
+    .tarjeta:hover {
+
+        transform: scale(1.08);
+
+    }
+
+    /* Rota la tarjeta 180 grados */
+
+    .tarjeta.volteada {
+
+        transform: rotateY(180deg);
+
+    }
+
+    /* Ambas caras se superponen en la misma posición, hidden oculta la cara inicial */
+
+    .cardFrente,
+    .cardAtras {
+
+        position: absolute;
+
+        width: 100%;
+
+        height: 100%;
+
+        backface-visibility: hidden;
+
+        border-radius: 14px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+    }
+
+    /* Diseño de la cara frontal */
+
+    .cardFrente {
+
+        background: #e53935;
+
+        color: #fdd835;
+
+        font-size: 2.8rem;
+
+        border: 3px solid #b71c1c;
+
+    }
+
+    /* Diseño de la cara trasera */
+
+    .cardAtras {
+
+        background: #fdd835;
+
+        transform: rotateY(180deg);
+
+        border: 3px solid #f57f17;
+
+    }
+
+    /* Diseño de la imagen en la cara trasera */
+
+    .cardAtras img {
+
+        width: 160px;
+
+        height: 160px;
+
+        object-fit: contain;
+
+    }
+
+    /* Diseño del texto en la cara trasera */
+
+    .cardAtras p {
+
+        font-size: 2rem;
+
+        margin-top: 6px;
+
+        color: #b71c1c;
+
+        font-weight: bold;
+
+    }
+
+    /* Diseño de la transición entre caras */
+
+    .tarjeta.bloqueada .cardFrente {
+
+        background: #ef9a9a;
+
+        cursor: default;
+
     }
 
     footer {
