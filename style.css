@@ -17,13 +17,26 @@ body {
 
     nav {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         padding: 1rem;
         background-color: rgb(119, 157, 134);
         color: white;
 
         font-size: 1.5rem;
+
+        h1,
+        span {
+            padding: 0 1rem
+        }
+
+        .card-counter {
+            background-color: rgb(255, 255, 255);
+            font-weight: bold;
+            color: rgb(119, 157, 134);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+        }
     }
 
     .filter-container {
@@ -51,13 +64,18 @@ body {
 
     .cards-container {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-grow: 9;
 
-        padding: 1rem;
+        padding: 0 0 1rem 1rem;
         border: 1px solid red;
+
+        flex-wrap: wrap;
 
         .card {
             border: 1px solid green;
+            margin: 1rem 1rem 0 0;
         }
     }
 
