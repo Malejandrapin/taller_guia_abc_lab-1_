@@ -7,7 +7,7 @@ class Caracter {
     }
 }
 
-const aLetter = new Caracter("A", "Letra A", "https://www.conmishijos.com/uploads/letras_cmh_a.jpg", true);
+const aLetter = new Caracter("A", "árbol", "https://www.conmishijos.com/uploads/letras_cmh_a.jpg", true);
 const bLetter = new Caracter("B", "Letra B", "https://www.bing.com/th?id=OIP.4U_rAZzNhJ2iEiANbI0HVwHaJ4", true);
 const cLetter = new Caracter("C", "Letra C", "https://tse4.mm.bing.net/th/id/OIP.KDniVD-xRbqKG8I1T3dCvAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3", true);
 const dLetter = new Caracter("D", "Letra D", "https://th.bing.com/th/id/OIP.4cuuKi-lkuPk1oQE-ceG4wHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3", true);
@@ -67,6 +67,10 @@ function generarTarjetas() {
 
         tarjeta.dataset.tipo = vocales.includes(letra.nombre) ? "vocal" : "consonante";
 
+        // Agregar atributo para rastrear si ha sido volteada por primera vez
+
+        tarjeta.dataset.flipped = "false";
+
         // Evento al hacer clic en la tarjeta para voltear y mostrar la información de la letra
 
         tarjeta.addEventListener("click", function () {
@@ -78,17 +82,11 @@ function generarTarjetas() {
         // Agrega el contenido HTML a la tarjeta incluyendo ambas caras
 
         tarjeta.innerHTML = `
-
             <div class="cardFrente">${letra.nombre}</div>
-
             <div class="cardAtras">
-
-                <img src="${letra.imagen}" alt="${letra.nombre}">
-
+                <img class="card-image" src="${letra.imagen}" alt="${letra.nombre}">
                 <p>${letra.palabra}</p>
-
             </div>
-
         `;
 
         // Agregar la tarjeta al contenedor
@@ -105,6 +103,20 @@ function voltear(tarjeta) {
 
     if (tarjeta.classList.contains("bloqueada")) return;
 
+    // Obtener el contador
+
+    const counter = document.getElementById('card-counter');
+
+    // Si es la primera vez que se voltea, incrementar el contador
+
+    if (tarjeta.dataset.flipped === "false") {
+
+        counter.textContent = parseInt(counter.textContent) + 1;
+
+        tarjeta.dataset.flipped = "true";
+
+    }
+
     // Agregar las clases "volteada" y "bloqueada" a la tarjeta para mostrar la cara trasera y bloquearla
 
     tarjeta.classList.add("volteada");
@@ -118,5 +130,49 @@ function voltear(tarjeta) {
 // Agregar un evento al cargar el contenido del DOM para generar las tarjetas 
 
 // El evento "DOMContentLoaded" se dispara cuando el documento HTML ha sido completamente cargado
+
+function filtrarVocales() {
+
+    const tarjetas = document.querySelectorAll(".tarjeta");
+
+    tarjetas.forEach(function (tarjeta) {
+
+        if (tarjeta.dataset.tipo === "vocal") {
+
+            tarjeta.style.display = "block";
+
+        } else {
+
+            tarjeta.style.display = "none";
+
+        }
+
+    });
+
+}
+
+document.querySelector(".active-filter").addEventListener("click", function () {
+
+    filtrarVocales();
+
+});
+
+function mostrarTodas() {
+
+    const tarjetas = document.querySelectorAll(".tarjeta");
+
+    tarjetas.forEach(function (tarjeta) {
+
+        tarjeta.style.display = "block";
+
+    });
+
+}
+
+document.querySelector(".show-all").addEventListener("click", function () {
+
+    mostrarTodas();
+
+});
 
 document.addEventListener("DOMContentLoaded", generarTarjetas);
